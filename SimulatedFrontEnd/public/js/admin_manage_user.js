@@ -1,5 +1,4 @@
-var baseURLConfig = require("../../config.json");
-let baseUrl = baseURLConfig.BACKENDURL;
+let baseUrl = "https://ec2-100-27-4-13.compute-1.amazonaws.com:5000"
 let $searchDesignFormContainer = $('#searchUserFormContainer');
 if ($searchDesignFormContainer.length != 0) {
     console.log('Search user form detected in manage user interface. Binding event handling logic to form elements.');

@@ -1,5 +1,4 @@
-var baseURLConfig = require("../../config.json");
-let baseUrl = baseURLConfig.BACKENDURL;
+let baseUrl = "https://ec2-100-27-4-13.compute-1.amazonaws.com:5000"
 let $registerFormContainer = $('#registerFormContainer');
 if ($registerFormContainer.length != 0) {
     console.log('Registration form detected. Binding event handling logic to form elements.');
