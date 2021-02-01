@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $searchDesignFormContainer = $('#searchDesignFormContainer');
 if ($searchDesignFormContainer.length != 0) {
     console.log('Search design form detected in user manage submission interface. Binding event handling logic to form elements.');

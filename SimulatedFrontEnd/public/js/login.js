@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $loginFormContainer = $('#loginFormContainer');
 if ($loginFormContainer.length != 0) {
     console.log('Login form detected. Binding event handling logic to form elements.');

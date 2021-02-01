@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $updateDesignFormContainer = $('#updateDesignFormContainer');
 if ($updateDesignFormContainer.length != 0) {
     console.log('Update Design form is detected. Binding event handling logic to form elements.');

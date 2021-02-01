@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $updateUserFormContainer = $('#updateUserFormContainer');
 if ($updateUserFormContainer.length != 0) {
     console.log('Update User form is detected. Binding event handling logic to form elements.');

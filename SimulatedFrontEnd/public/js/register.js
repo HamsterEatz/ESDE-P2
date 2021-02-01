@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $registerFormContainer = $('#registerFormContainer');
 if ($registerFormContainer.length != 0) {
     console.log('Registration form detected. Binding event handling logic to form elements.');

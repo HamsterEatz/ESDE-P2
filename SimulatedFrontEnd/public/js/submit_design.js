@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $submitDesignFormContainer = $('#submitDesignFormContainer');
 if ($submitDesignFormContainer.length != 0) {
     console.log('Submit design form detected. Binding event handling logic to form elements.');

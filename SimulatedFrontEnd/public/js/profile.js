@@ -1,4 +1,5 @@
-let baseUrl = process.env.BACKENDURL;
+var baseURLConfig = require("../../config.json");
+let baseUrl = baseURLConfig.BACKENDURL;
 let $profileContainer = $('#profileContainer');
 if ($profileContainer.length != 0) {
     console.log('Profile page is detected. Binding event handling logic to form elements.');
