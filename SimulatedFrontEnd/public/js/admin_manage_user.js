@@ -1,3 +1,4 @@
+let baseUrl = process.env.BACKENDURL;
 let $searchDesignFormContainer = $('#searchUserFormContainer');
 if ($searchDesignFormContainer.length != 0) {
     console.log('Search user form detected in manage user interface. Binding event handling logic to form elements.');
@@ -6,7 +7,6 @@ if ($searchDesignFormContainer.length != 0) {
     //to server-side api when the #submitButton element fires the click event.
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
-        const baseUrl = 'https://localhost:5000';
         let searchInput = $('#searchInput').val();
         let userId = localStorage.getItem('token');
         axios({
@@ -85,7 +85,6 @@ if ($searchDesignFormContainer.length != 0) {
 
     function clickHandlerForPageButton(event) {
         event.preventDefault();
-        const baseUrl = 'https://localhost:5000';
         let userId = localStorage.getItem('token');
         let pageNumber = $(event.target).text().trim();
         let searchInput = $('#searchInput').val();

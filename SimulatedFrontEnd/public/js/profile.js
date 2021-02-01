@@ -1,3 +1,4 @@
+let baseUrl = process.env.BACKENDURL;
 let $profileContainer = $('#profileContainer');
 if ($profileContainer.length != 0) {
     console.log('Profile page is detected. Binding event handling logic to form elements.');
@@ -8,7 +9,6 @@ if ($profileContainer.length != 0) {
 
     function getOneUser() {
 
-        const baseUrl = 'https://localhost:5000';
 
         let userId = localStorage.getItem('token');
         axios({
