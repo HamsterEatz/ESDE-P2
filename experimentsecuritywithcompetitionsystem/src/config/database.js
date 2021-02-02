@@ -9,7 +9,8 @@ const pool = mysql.createPool({
         user: config.databaseUserName,
         password: config.databasePassword,
         database: config.databaseName,
-        multipleStatements: true
+        multipleStatements: true,
+        insecureAuth : true
     });
 
  module.exports=pool;
