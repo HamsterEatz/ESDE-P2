@@ -1,4 +1,4 @@
-let baseUrl = "https://ec2-100-27-4-13.compute-1.amazonaws.com:5000"
+let baseUrl = "https://ec2-54-237-122-222.compute-1.amazonaws.com:5000"
 let $loginFormContainer = $('#loginFormContainer');
 if ($loginFormContainer.length != 0) {
     console.log('Login form detected. Binding event handling logic to form elements.');

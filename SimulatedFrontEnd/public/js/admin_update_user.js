@@ -1,4 +1,4 @@
-let baseUrl = "https://ec2-100-27-4-13.compute-1.amazonaws.com:5000"
+let baseUrl = "https://ec2-54-237-122-222.compute-1.amazonaws.com:5000"
 let $updateUserFormContainer = $('#updateUserFormContainer');
 if ($updateUserFormContainer.length != 0) {
     console.log('Update User form is detected. Binding event handling logic to form elements.');
