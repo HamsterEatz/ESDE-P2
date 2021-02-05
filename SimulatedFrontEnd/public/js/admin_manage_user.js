@@ -1,4 +1,4 @@
-let baseUrl = "https://ec2-54-237-122-222.compute-1.amazonaws.com:5000"
+let baseUrl = "https://ec2-35-174-211-90.compute-1.amazonaws.com:5000"
 let $searchDesignFormContainer = $('#searchUserFormContainer');
 if ($searchDesignFormContainer.length != 0) {
     console.log('Search user form detected in manage user interface. Binding event handling logic to form elements.');
