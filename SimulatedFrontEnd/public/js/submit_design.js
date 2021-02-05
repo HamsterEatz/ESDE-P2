@@ -62,11 +62,12 @@ if ($submitDesignFormContainer.length != 0) {
     });
 
     function escapeHtml(unsafe) {
-        return unsafe
+        let safe = unsafe
             .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
             .replace(/>/g, "&gt;")
             .replace(/"/g, "&quot;")
             .replace(/'/g, "&#039;");
+        return safe;
     }
 } //End of checking for $submitDesignFormContainer jQuery object
