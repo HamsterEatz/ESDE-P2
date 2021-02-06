@@ -1,4 +1,4 @@
-let baseUrl = "https://ir2ucxjnni.execute-api.us-east-1.amazonaws.com/prod"
+let baseUrl = "https://86ukurkkmh.execute-api.us-east-1.amazonaws.com/production";
 let $submitDesignFormContainer = $('#submitDesignFormContainer');
 if ($submitDesignFormContainer.length != 0) {
     console.log('Submit design form detected. Binding event handling logic to form elements.');
