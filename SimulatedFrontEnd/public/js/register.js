@@ -1,4 +1,4 @@
-let baseUrl = "https://ec2-35-174-211-90.compute-1.amazonaws.com:5000"
+let baseUrl = "https://ec2-54-236-49-107.compute-1.amazonaws.com:5000"
 let $registerFormContainer = $('#registerFormContainer');
 if ($registerFormContainer.length != 0) {
     console.log('Registration form detected. Binding event handling logic to form elements.');
