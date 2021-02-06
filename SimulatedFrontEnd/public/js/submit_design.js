@@ -19,7 +19,7 @@ if ($submitDesignFormContainer.length != 0) {
             method: 'post',
             url: baseUrl + '/api/user/process-submission',
             data: webFormData,
-            headers: { 'Content-Type': 'multipart/form-data', 'user': "Bearer " + userId }
+            headers: { 'Content-Type': 'multipart/form-data', 'user': "Bearer " + userId, 'Accept': 'image/png', 'Accept': 'image/jpeg' }
         })
             .then(function (response) {
                 Noty.overrideDefaults({
