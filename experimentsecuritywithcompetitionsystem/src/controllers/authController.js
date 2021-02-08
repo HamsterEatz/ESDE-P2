@@ -5,12 +5,17 @@ const config = require('../config/config');
 const jwt = require('jsonwebtoken');
 const logger = require('../middlewares/logger');
 
-
 // exports.processLogin = (req, res, next) => {
 exports.processLogin = async (req, res, next) => {
 
     let email = req.body.email;
     let password = req.body.password;
+
+    auth.signIn(email, password)
+    .then((data) => res.status(200).json(data))
+    .catch((err) => res.status(500).json({ message: "Login failed" }));
+
+    /*
 
     try {
         let results = await auth.authenticate(email);
@@ -37,7 +42,7 @@ exports.processLogin = async (req, res, next) => {
                 logger.error("Login failed");
                 return res.status(500).json({ message: "Login failed" });
             } //End of passowrd comparison with the retrieved decoded password.
-        }
+        } */
 
         /* function(error, results) {
         if (error) {
@@ -76,12 +81,13 @@ exports.processLogin = async (req, res, next) => {
 
         }
 
-    }) */
+    })
 
     } catch (error) {
         logger.error(error);
         return res.status(500).json({ message: error });
     } //end of try
+    */
 };
 
 // If user submitted data, run the code in below
@@ -91,7 +97,11 @@ exports.processRegister = (req, res, next) => {
     let email = req.body.email;
     let password = req.body.password;
 
+    auth.signUp(email, password)
+    .then((data) => res.status(200).json(data))
+    .catch((err) => res.status(500).json({ message: "Login failed" }));
 
+    /*
     bcrypt.hash(password, 10, async (err, hash) => {
         if (err) {
             //console.log('Error on hashing password');
@@ -112,7 +122,7 @@ exports.processRegister = (req, res, next) => {
                 return res.status(500).json({ message: 'Unable to complete registration' });
             }
         }
-    });
+    }); */
 
 
 }; //End of processRegister

@@ -1,4 +1,4 @@
-let baseUrl = "https://ec2-3-214-221-217.compute-1.amazonaws.com:5000"
+let baseUrl = "https://localhost:5000"
 let $updateDesignFormContainer = $('#updateDesignFormContainer');
 if ($updateDesignFormContainer.length != 0) {
     console.log('Update Design form is detected. Binding event handling logic to form elements.');

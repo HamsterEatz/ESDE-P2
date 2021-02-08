@@ -7,9 +7,9 @@ var validationFn = {
         var email = req.body.email;
         var password = req.body.password;
 
-        var rePassword = new RegExp(`^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,20}$`);
+        //var rePassword = new RegExp(`^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,20}$`);
 
-        if (rePassword.test(password) && validator.isEmail(email)) {
+        if (validator.isEmail(email)) {
             next();
         } else {
             logger.error("User failed registering");
